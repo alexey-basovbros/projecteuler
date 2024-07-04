@@ -5,7 +5,7 @@ import { App } from './app';
 test('app rendering', () => {
   render(<App />);
 
-  const appHeader = screen.getByText(/App component/i);
+  const appWrapper = screen.getByTestId('app-wrapper');
 
-  expect(appHeader).toBeInTheDocument();
+  expect(appWrapper).toBeInTheDocument();
 });
